@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vietle.noughtsandcrosses.MainActivity">
+
+
+    <GridLayout
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:background="@drawable/grid"
+        android:columnCount="3"
+        android:rowCount="3"
+
+        android:id="@+id/gridLayout">
+
+    <ImageView
+
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"
+        android:onClick="drop"
+        android:tag="0"
+
+        />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="35dp"
+
+            android:onClick="drop"
+            android:tag="1"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+
+            android:onClick="drop"
+            android:tag="2"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="20dp"
+
+            android:onClick="drop"
+            android:tag="3"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="35dp"
+
+            android:onClick="drop"
+            android:tag="4"
+            />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="40dp"
+
+            android:onClick="drop"
+            android:tag="5"/>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:onClick="drop"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:tag="6"
+            />
+
+        <ImageView
+            android:onClick="drop"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="35dp"
+            android:tag="7"
+            />
+        <ImageView
+            android:onClick="drop"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dp"
+            android:tag="8"
+
+
+            />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/play"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:gravity="center"
+        android:layout_marginTop="41dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        >
+
+        <TextView
+            android:id="@+id/winningMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_green_dark"
+            android:gravity="center"
+            android:text="hello"
+
+
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/playAgainButton"
+            android:onClick="playAgainButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play Again"
+
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
